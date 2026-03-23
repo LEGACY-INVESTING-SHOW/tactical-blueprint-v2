@@ -5,12 +5,11 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Join Preston Seo's free live workshop to uncover the 5 tax leaks draining your W-2 income and learn practical ways to keep more of what you earn." name="description"/>
 <title>Preston Seo | Free Live Workshop: The 5 Tax Leaks Draining Your W-2 Income</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="font" crossorigin="" href="/assets/fonts/manrope-latin.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/inter-latin.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/roboto-condensed-latin.woff2" rel="preload" type="font/woff2"/>
 <link as="style" href="/assets/site.css" rel="preload"/>
 <link href="/assets/site.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Roboto+Condensed:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 </head>
 <body class="bg-surface font-body text-on-surface antialiased">
 <!-- TopNavBar -->
@@ -54,11 +53,11 @@
 </div>
 <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-on-surface-variant text-sm">schedule</span>
+<svg aria-hidden="true" class="icon w-4 h-4 text-on-surface-variant" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5v4.8l3.1 1.9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
 <span class="text-xs font-technical uppercase tracking-wider font-bold">Duration: 1 Hour</span>
 </div>
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-sm">event</span>
+<svg aria-hidden="true" class="icon w-4 h-4 text-secondary" fill="none" viewBox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="16" x="4" y="6"/><path d="M8 4v4M16 4v4M4 10h16" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
 <span class="text-xs font-technical uppercase tracking-wider font-bold text-secondary">Today 7:00 PM EST / 4:00 PM PST</span>
 </div>
 </div>
@@ -87,7 +86,7 @@
 <div class="h-full bg-error/10 absolute left-0 top-0 w-3/4 border-r border-error"></div>
 <div class="z-10 flex w-full justify-between items-center">
 <span class="text-[10px] font-technical uppercase font-bold text-error">Critical Failure Point Identified</span>
-<span class="material-symbols-outlined text-error text-lg" style="font-variation-settings: 'FILL' 1;">warning</span>
+<svg aria-hidden="true" class="icon w-[18px] h-[18px] text-error" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3.5 2.9 19.2A1.2 1.2 0 0 0 4 21h16a1.2 1.2 0 0 0 1.1-1.8L12 3.5Zm-1 5.5h2v5h-2V9Zm0 6.5h2v2h-2v-2Z"/></svg>
 </div>
 </div>
 </div>
@@ -101,7 +100,7 @@
 <div class="h-full bg-on-tertiary-container/10 absolute left-0 top-0 w-1/2 border-r border-on-tertiary-container"></div>
 <div class="z-10 flex w-full justify-between items-center">
 <span class="text-[10px] font-technical uppercase font-bold text-on-tertiary-container">Strategy: Section 199A Bypass</span>
-<span class="material-symbols-outlined text-on-tertiary-container text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<svg aria-hidden="true" class="icon w-[18px] h-[18px] text-on-tertiary-container" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12.3 2.4 2.4 4.7-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
 </div>
 </div>
 </div>
@@ -297,9 +296,62 @@
 <div class="js_captcha_wrapper"></div>
 <button class="submit_button_c45147dee729311ef5b5c3003946c48f w-full bg-secondary-container text-on-secondary-container border-b-4 border-secondary px-10 py-5 rounded-none font-bold text-lg hover:translate-y-[-2px] transition-all uppercase tracking-widest font-technical shadow-lg" onclick="var element = this; element.form.submit(); element.setAttribute('disabled', true); setTimeout(function(){element.removeAttribute('disabled');}, 1000);" type="submit">Register Now - It&#039;s Free</button>
 </form>
-<script>window.jQuery || document.write('<script src="https://app.kartra.com/js/node_modules/kartra-jquery/jquery-1.11.3/jquery-1.11.3.min.js"><\/script>')</script>
-<script defer src="https://app.kartra.com/resources/js/analytics/8g8M14vk"></script>
-<script defer src="https://app.kartra.com//resources/js/optin_front_javascript?form_id=c45147dee729311ef5b5c3003946c48f&optin_hash=W67F3dVIxv9c&khoi=8g8M14vk"></script>
+<script>
+(() => {
+  const registerSection = document.getElementById("register");
+  const registerForm = registerSection?.querySelector("form");
+  if (!registerSection || !registerForm) return;
+
+  const scriptSources = [
+    "https://app.kartra.com/js/node_modules/kartra-jquery/jquery-1.11.3/jquery-1.11.3.min.js",
+    "https://app.kartra.com/resources/js/analytics/8g8M14vk",
+    "https://app.kartra.com//resources/js/optin_front_javascript?form_id=c45147dee729311ef5b5c3003946c48f&optin_hash=W67F3dVIxv9c&khoi=8g8M14vk"
+  ];
+
+  let isLoading = false;
+  let isLoaded = false;
+
+  const loadScript = (src) =>
+    new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.async = false;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.body.appendChild(script);
+    });
+
+  const loadKartraEnhancements = () => {
+    if (isLoading || isLoaded) return;
+    isLoading = true;
+    scriptSources
+      .reduce((chain, src) => chain.then(() => loadScript(src)), Promise.resolve())
+      .then(() => {
+        isLoaded = true;
+      })
+      .catch(() => {
+        isLoading = false;
+      });
+  };
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        loadKartraEnhancements();
+        observer.disconnect();
+      }
+    },
+    { rootMargin: "300px 0px" }
+  );
+
+  observer.observe(registerSection);
+  registerForm.addEventListener("focusin", loadKartraEnhancements, { once: true });
+  registerForm.addEventListener("pointerdown", loadKartraEnhancements, {
+    once: true,
+    passive: true
+  });
+})();
+</script>
 </div>
 </div>
 </div>

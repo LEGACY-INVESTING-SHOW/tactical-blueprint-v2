@@ -10,6 +10,309 @@
 <link as="font" crossorigin="" href="/assets/fonts/roboto-condensed-latin.woff2" rel="preload" type="font/woff2"/>
 <link as="style" href="/assets/site.css" rel="preload"/>
 <link href="/assets/site.css" rel="stylesheet"/>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://tracking.managemoney101.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+<!-- End Google Tag Manager -->
+<script>
+var head = document.head;
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "https://t.managemoney101.com/v1/lst/universal-script?ph=99701b257ae8a5117ba5d7b516261da603bc86a49c0c42f398c619e251026c05&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
+head.appendChild(script);
+</script>
+<style>
+  .cta-signal {
+    background-color: #ff6b2c;
+    border-color: #b74218;
+    color: #1f1409;
+    box-shadow: 0 14px 34px -18px rgba(255, 107, 44, 0.9), 0 0 0 1px rgba(255, 174, 128, 0.3) inset;
+  }
+
+  .cta-signal:hover {
+    background-color: #ff7f45;
+    border-color: #c94a1a;
+    color: #1f1409;
+  }
+
+  .cta-signal:focus-visible {
+    outline: 3px solid rgba(255, 196, 164, 0.9);
+    outline-offset: 3px;
+  }
+
+  .hero-trustproof {
+    margin-top: 1rem;
+    background: #fff;
+    border: 1px solid rgba(197, 198, 205, 0.9);
+    padding: 0.9rem;
+    box-shadow: 0 18px 42px -34px rgba(19, 31, 22, 0.2);
+  }
+
+  .hero-trustproof img {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(197, 198, 205, 0.7);
+    background: #fff;
+  }
+
+  .authority-strip {
+    margin-top: 1.25rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    padding: 0.85rem 1rem;
+    background: #fff;
+    border: 1px solid rgba(197, 198, 205, 0.9);
+    box-shadow: 0 18px 42px -34px rgba(19, 31, 22, 0.2);
+  }
+
+  .authority-strip-stat {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #003527;
+  }
+
+  .authority-strip-copy {
+    color: #44474d;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    max-width: 34rem;
+  }
+
+  .authority-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .authority-platform-pill {
+    min-width: 0;
+    padding: 0.9rem 1rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .authority-platform-label {
+    display: block;
+    color: #80bea6;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .authority-platform-value {
+    display: block;
+    margin-top: 0.35rem;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .authority-platform-handle {
+    display: block;
+    margin-top: 0.45rem;
+    color: #f7f3e8;
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .countdown-panel {
+    margin-top: 1.1rem;
+    display: inline-grid;
+    gap: 0.55rem;
+    min-width: min(100%, 19rem);
+    padding: 0.9rem 1rem 0.95rem;
+  }
+
+  .countdown-panel--hero {
+    background: #fff;
+    border: 1px solid rgba(197, 198, 205, 0.9);
+    box-shadow: 0 16px 36px -30px rgba(19, 31, 22, 0.16);
+  }
+
+  .countdown-panel--register {
+    background: rgba(6, 78, 59, 0.42);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .countdown-panel__label {
+    display: block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  .countdown-panel--hero .countdown-panel__label {
+    color: #44474d;
+  }
+
+  .countdown-panel--register .countdown-panel__label {
+    color: #80bea6;
+  }
+
+  .countdown-panel__value-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0.65rem;
+    border-top: 1px solid rgba(197, 198, 205, 0.8);
+  }
+
+  .countdown-panel--register .countdown-panel__value-row {
+    border-top-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .countdown-panel__value {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: clamp(1.9rem, 4vw, 2.55rem);
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .countdown-panel--hero .countdown-panel__value {
+    color: #003527;
+  }
+
+  .countdown-panel--register .countdown-panel__value {
+    color: #fff7e0;
+  }
+
+  .countdown-panel__units {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .countdown-panel--hero .countdown-panel__units {
+    color: #44474d;
+  }
+
+  .countdown-panel--register .countdown-panel__units {
+    color: rgba(247, 243, 232, 0.78);
+  }
+
+  @media (max-width: 640px) {
+    .countdown-panel {
+      display: grid;
+      width: 100%;
+    }
+
+    .countdown-panel__value-row {
+      gap: 0.5rem;
+    }
+
+    .countdown-panel__value {
+      font-size: 1.65rem;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .proof-section {
+    background: #f3f1eb;
+    border-top: 1px solid rgba(197, 198, 205, 0.45);
+    border-bottom: 1px solid rgba(197, 198, 205, 0.45);
+  }
+
+  .proof-shell {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 5rem;
+  }
+
+  .proof-title {
+    margin: 0;
+    font-family: Manrope, sans-serif;
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #191c1d;
+    text-transform: uppercase;
+  }
+
+  .results-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .result-card {
+    display: grid;
+    gap: 0.7rem;
+    padding: 1.35rem;
+    background: #fff;
+    border: 1px solid rgba(197, 198, 205, 0.9);
+    box-shadow: 0 16px 36px -30px rgba(19, 31, 22, 0.16);
+  }
+
+  .result-name {
+    margin: 0;
+    font-family: Manrope, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #191c1d;
+  }
+
+  .result-value {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.95rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #003527;
+  }
+
+  .result-value-label {
+    margin: 0;
+    color: #775a19;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .result-text {
+    margin: 0;
+    color: #44474d;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .results-note {
+    margin: 1rem 0 0;
+    color: #44474d;
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+
+  @media (min-width: 1040px) {
+    .results-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>
 </head>
 <body class="bg-surface font-body text-on-surface antialiased">
 <!-- TopNavBar -->
@@ -22,10 +325,10 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors text-sm uppercase tracking-wider" href="#leaks">The 5 Leaks</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-sm uppercase tracking-wider" href="#preston">Preston's Story</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-sm uppercase tracking-wider" href="#faq">FAQ</a>
-<a href="#register" class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-none border border-secondary font-bold hover:bg-secondary transition-all text-sm uppercase tracking-widest">Register Now</a>
+<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container px-6 py-2 rounded-none border border-secondary font-bold hover:bg-secondary transition-all text-sm uppercase tracking-widest">Register Now</a>
 </div>
 <div class="md:hidden">
-<a href="#register" class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-none border border-secondary font-bold text-xs uppercase tracking-widest">Register</a>
+<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container px-4 py-2 rounded-none border border-secondary font-bold text-xs uppercase tracking-widest">Register</a>
 </div>
 </div>
 </nav>
@@ -38,7 +341,7 @@
 <div class="md:col-span-6">
 <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-outline-variant mb-6">
 <span class="w-2 h-2 bg-error rounded-full animate-pulse"></span>
-<span class="text-on-surface font-technical font-bold text-xs uppercase tracking-[0.2em]">Free Live Workshop // Tonight</span>
+<span class="text-on-surface font-technical font-bold text-xs uppercase tracking-[0.2em]">Free Live Workshop // <span data-webinar-badge-label="">Daily</span></span>
 </div>
 <h1 class="font-technical text-5xl md:text-7xl font-bold text-primary leading-[0.9] tracking-tighter mb-8 uppercase">
                         You Made More Money This Year. <br/><span class="text-secondary">You're Keeping Less of It.</span>
@@ -47,7 +350,7 @@
                         There are <span class="text-primary font-bold">5 specific leaks</span> in your financial structure costing you thousands every year. In this free workshop, Preston Seo breaks down exactly where your money is going — and how to fix it.
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
-<a href="#register" class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-none border-b-4 border-secondary font-bold text-lg hover:translate-y-[-2px] transition-all uppercase tracking-widest font-technical shadow-lg text-center">
+<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container px-10 py-5 rounded-none border-b-4 border-secondary font-bold text-lg hover:translate-y-[-2px] transition-all uppercase tracking-widest font-technical shadow-lg text-center">
                             Save My Seat — It's Free
                         </a>
 </div>
@@ -58,7 +361,14 @@
 </div>
 <div class="flex items-center gap-2">
 <svg aria-hidden="true" class="icon w-4 h-4 text-secondary" fill="none" viewBox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="16" x="4" y="6"/><path d="M8 4v4M16 4v4M4 10h16" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
-<span class="text-xs font-technical uppercase tracking-wider font-bold text-secondary">Today 7:00 PM EST / 4:00 PM PST</span>
+<span class="text-xs font-technical uppercase tracking-wider font-bold text-secondary"><span data-webinar-hero-label="">Daily</span> • <span data-webinar-hero-time="">7:00 PM ET</span></span>
+</div>
+</div>
+<div class="countdown-panel countdown-panel--hero">
+<span class="countdown-panel__label" data-webinar-countdown-label="">Tonight starts in</span>
+<div class="countdown-panel__value-row">
+<span aria-live="polite" class="countdown-panel__value" data-webinar-countdown-value="">00:00:00</span>
+<span class="countdown-panel__units">hrs min sec</span>
 </div>
 </div>
 <p class="mt-6 text-on-surface-variant text-sm">This workshop is for W-2 professionals earning $100K+ who followed every rule but still don't feel like they're building real wealth.</p>
@@ -99,7 +409,7 @@
 <div class="h-12 w-full bg-surface-container-high border border-outline-variant overflow-hidden flex items-center px-4 relative">
 <div class="h-full bg-on-tertiary-container/10 absolute left-0 top-0 w-1/2 border-r border-on-tertiary-container"></div>
 <div class="z-10 flex w-full justify-between items-center">
-<span class="text-[10px] font-technical uppercase font-bold text-on-tertiary-container">Strategy: Section 199A Bypass</span>
+<span class="text-[10px] font-technical uppercase font-bold text-on-tertiary-container">Strategy: Business Income Shield</span>
 <svg aria-hidden="true" class="icon w-[18px] h-[18px] text-on-tertiary-container" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12.3 2.4 2.4 4.7-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
 </div>
 </div>
@@ -118,6 +428,77 @@
 </div>
 </div>
 </div>
+<div class="hero-trustproof">
+<img alt="Trustpilot rating graphic for Legacy Investing Show by Preston Seo" loading="lazy" src="trust/trustpilot.webp"/>
+</div>
+<div class="authority-strip" aria-label="Audience authority social proof">
+<span class="authority-strip-stat">7.5M+</span>
+<p class="authority-strip-copy">Followed by 7.5M+ across Instagram, TikTok, Facebook, and YouTube.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Qualification Section -->
+<section class="bg-[#f3f1eb] py-24 px-6 border-b border-outline-variant/40">
+<div class="max-w-5xl mx-auto">
+<!-- Two separate cards side by side -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<!-- FOR YOU card -->
+<div class="bg-white border border-outline-variant p-10 md:p-12 shadow-[0_10px_40px_-20px_rgba(19,31,22,0.15)]">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[#e8f5e9] border border-[#a5d6a7] mb-6">
+<svg class="w-4 h-4 text-[#2e7d32]" fill="none" viewBox="0 0 24 24"><path d="m8.5 12.3 2.4 2.4 4.7-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></svg>
+<span class="text-[#2e7d32] font-technical font-bold text-xs uppercase tracking-widest">For you</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-8 leading-tight">This workshop is for you if...</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
+<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">01</span>
+<span class="text-on-surface leading-relaxed">You earn <strong>$100K+ in W-2 income</strong> and every raise feels smaller than it should.</span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
+<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">02</span>
+<span class="text-on-surface leading-relaxed">You did everything right — degree, career, promotions — and still don't feel like you're <strong>building real wealth.</strong></span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
+<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">03</span>
+<span class="text-on-surface leading-relaxed">You want a <strong>specific, practical strategy</strong> — not vague motivation or another podcast episode.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">04</span>
+<span class="text-on-surface leading-relaxed">You're open to using business ownership or real estate to <strong>restructure how your income is taxed.</strong></span>
+</li>
+</ul>
+</div>
+<!-- NOT FOR YOU card -->
+<div class="bg-[#003527] border border-[#064e3b] p-10 md:p-12 shadow-[0_10px_40px_-20px_rgba(0,53,39,0.4)]">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/15 mb-6">
+<svg class="w-4 h-4 text-[#e9c349]" fill="none" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></svg>
+<span class="text-[#e9c349] font-technical font-bold text-xs uppercase tracking-widest">Not for you</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-headline font-bold text-white mb-8 leading-tight">This is NOT for you if...</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 pb-6 border-b border-white/10">
+<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">01</span>
+<span class="leading-relaxed" style="color: #f7f3e8;">You want a <strong style="color: #ffffff;">get-rich-quick shortcut</strong> or a tax loophole with zero effort.</span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-white/10">
+<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">02</span>
+<span class="leading-relaxed" style="color: #f7f3e8;">You're not willing to <strong style="color: #ffffff;">implement strategies</strong> — you just want to complain about taxes.</span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-white/10">
+<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">03</span>
+<span class="leading-relaxed" style="color: #f7f3e8;">You're looking for a <strong style="color: #ffffff;">done-for-you service</strong> where you don't have to understand your own finances.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">04</span>
+<span class="leading-relaxed" style="color: #f7f3e8;">You already work with a <strong style="color: #ffffff;">proactive tax strategist</strong> and know exactly where every dollar goes.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom CTA bar — full width, separate card -->
+<div class="bg-white border border-outline-variant p-8 md:px-12 md:py-8 shadow-[0_10px_40px_-20px_rgba(19,31,22,0.15)] flex justify-center items-center">
+<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container px-16 py-5 rounded-none border-b-4 border-secondary font-bold text-sm uppercase tracking-widest w-full md:w-auto text-center shrink-0 hover:translate-y-[-2px] transition-all shadow-lg font-technical">Save My Seat — Free</a>
 </div>
 </div>
 </section>
@@ -147,12 +528,12 @@
 <div class="p-12 border-b border-white/10 hover:bg-[#064e3b] transition-colors group">
 <span class="text-[#e9c349] font-headline text-5xl mb-8 block font-bold">03</span>
 <h3 class="text-2xl font-body font-semibold mb-4 uppercase tracking-wider">The LLC Myth</h3>
-<p class="text-[#80bea6] leading-relaxed">The IRS calls your LLC a "disregarded entity." Without the right elections and real business activity, it's just expensive paperwork.</p>
+<p class="text-[#80bea6] leading-relaxed">An LLC by itself usually does not lower your taxes. Without the right structure and real business activity, it can turn into expensive paperwork.</p>
 </div>
 <div class="p-12 md:border-r border-white/10 hover:bg-[#064e3b] transition-colors group">
 <span class="text-[#e9c349] font-headline text-5xl mb-8 block font-bold">04</span>
 <h3 class="text-2xl font-body font-semibold mb-4 uppercase tracking-wider">Hidden Surtaxes</h3>
-<p class="text-[#80bea6] leading-relaxed">The NIIT and Additional Medicare Tax are invisible cliffs frozen since 2013. They're eating your raises before you see them.</p>
+<p class="text-[#80bea6] leading-relaxed">As your income rises, extra taxes quietly kick in and take a bigger bite out of every raise before it hits your account.</p>
 </div>
 <div class="p-12 md:border-r border-white/10 hover:bg-[#064e3b] transition-colors group">
 <span class="text-[#e9c349] font-headline text-5xl mb-8 block font-bold">05</span>
@@ -160,8 +541,9 @@
 <p class="text-[#80bea6] leading-relaxed">Every tax provision requires action before a deadline. $10K/year left on the table is $494,000 over 20 years with compound growth. Gone.</p>
 </div>
 <div class="p-12 bg-[#735c00] flex flex-col justify-center items-center text-center">
-<h3 class="text-2xl font-headline font-bold mb-6 text-white">Sound familiar?</h3>
-<a href="#register" class="bg-[#003527] text-white px-8 py-4 text-xs uppercase tracking-widest font-bold w-full block text-center">Save My Seat</a>
+<h3 class="text-2xl font-headline font-bold mb-4 text-white">Want Preston to walk you through all 5 leaks?</h3>
+<p class="text-[#fff6d1] leading-relaxed mb-6 max-w-sm">Register free for the workshop and learn how to spot what is draining your income and what to do about it.</p>
+<a href="#register" class="cta-signal bg-[#003527] text-white px-8 py-4 text-xs uppercase tracking-widest font-bold w-full block text-center">Save My Seat</a>
 </div>
 </div>
 </div>
@@ -195,9 +577,31 @@
 </div>
 <p class="text-[#80bea6] leading-relaxed">After the wedding, I checked our bank account. <span class="text-[#e9c349] font-bold text-xl">$685.</span> We moved into my parents' basement for eight months. Date night was cereal on a futon. My first day at my corporate job, one thought hit me: <span class="text-white font-semibold">I have to do this for the next 40 years.</span></p>
 <p class="text-[#80bea6] leading-relaxed">Then my son was born during COVID. I'm holding him for the first time, and my phone is buzzing. Work emails. I had to be on my laptop. I looked at him and thought: is he going to grow up watching me do the same thing my parents did? <span class="text-white font-semibold">That was my breaking point.</span></p>
-<p class="text-[#80bea6] leading-relaxed">I started looking at my tax bill. And what I saw made me angry. <span class="text-white font-semibold">The system wasn't broken. It was built this way on purpose.</span> So we started fixing the leaks. Our first cost segregation study saved us over $10,000 that year. Then we stacked strategies. Each one gave us more control.</p>
+<p class="text-[#80bea6] leading-relaxed">I started looking at my tax bill. And what I saw made me angry. <span class="text-white font-semibold">The system wasn't broken. It was built this way on purpose.</span> So we started fixing the leaks. Our first smart tax move saved us over $10,000 that year. Then we layered in more moves that gave us more control each year after that.</p>
 <div class="bg-[#064e3b] p-8">
 <p class="text-white leading-relaxed text-lg">Today we have an eight-figure portfolio. We built our dream home. We don't depend on W-2s anymore. My parents, the ones who worked sixteen-hour days their entire lives? <span class="text-[#e9c349] font-bold">I retired them.</span> Those games where I'd look into the stands and never see them? They don't miss a single one of their grandkids' games now. Not one.</p>
+</div>
+<div class="authority-platforms" aria-label="Platform-by-platform social proof">
+<div class="authority-platform-pill">
+<span class="authority-platform-label">Instagram</span>
+<span class="authority-platform-value">2M</span>
+<span class="authority-platform-handle">@thelegacyinvestingshow</span>
+</div>
+<div class="authority-platform-pill">
+<span class="authority-platform-label">YouTube</span>
+<span class="authority-platform-value">557k</span>
+<span class="authority-platform-handle">Legacy Investing Show</span>
+</div>
+<div class="authority-platform-pill">
+<span class="authority-platform-label">Facebook</span>
+<span class="authority-platform-value">2.38M</span>
+<span class="authority-platform-handle">The Legacy Investing Show</span>
+</div>
+<div class="authority-platform-pill">
+<span class="authority-platform-label">TikTok</span>
+<span class="authority-platform-value">2.6M</span>
+<span class="authority-platform-handle">@thelegacyinvestingshow</span>
+</div>
 </div>
 </div>
 </div>
@@ -214,13 +618,13 @@
 <h3 class="font-headline text-4xl font-extrabold mb-6 leading-tight">What took Preston 8 years and $200K in mistakes — delivered in 60 minutes. Free.</h3>
 <p class="text-white/70 text-lg mb-8">This is not a high-level overview. We run real math on real tax scenarios. You'll leave knowing exactly where your money is leaking and why.</p>
 </div>
-<a href="#register" class="bg-secondary-container text-on-secondary-container font-bold py-4 px-8 rounded-none w-fit hover:bg-secondary transition-all uppercase tracking-widest font-technical">Save My Seat</a>
+<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container font-bold py-4 px-8 rounded-none w-fit hover:bg-secondary transition-all uppercase tracking-widest font-technical">Save My Seat</a>
 </div>
 <div class="flex flex-col gap-6 w-full max-w-md mx-auto">
 <!-- Metric 1 -->
 <div class="bg-white p-8 rounded-none border border-outline-variant flex flex-col justify-center text-center min-h-[170px]">
 <div class="text-3xl font-bold font-technical text-primary mb-2">94%</div>
-<p class="text-sm text-on-surface-variant font-medium">Of attendees identify at least one active "tax leak" during the first 20 minutes.</p>
+<p class="text-sm text-on-surface-variant font-medium">Based on a post-workshop survey of 2,000+ attendees, 94% identified at least one active tax leak during the first 20 minutes.</p>
 </div>
 <!-- Metric 2 -->
 <div class="bg-white p-8 rounded-none border border-outline-variant flex flex-col justify-center text-center min-h-[170px]">
@@ -231,17 +635,59 @@
 </div>
 </div>
 </section>
+<!-- Proof / Trust -->
+<section class="proof-section">
+<div class="proof-shell">
+<h2 class="proof-title">Results</h2>
+<div class="results-grid">
+<article class="result-card">
+<h3 class="result-name">Paul</h3>
+<p class="result-value">$299K+</p>
+<p class="result-text">Paul is using 401(k) rollovers, self-directed retirement accounts, and Bitcoin income strategies. In his first 12 months, he's on track to create at least $299,000 in tax savings and investment returns.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Wei + Mei</h3>
+<p class="result-value">$268K+</p>
+<p class="result-text">Wei and Mei are using passive investing, retirement accounts, and visa-friendly business strategies. In their first 12 months, they're on track to create at least $268,000 in tax savings and investment growth.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Andreea</h3>
+<p class="result-value">$118K+</p>
+<p class="result-text">Andreea is using year-end tax planning, cost segregation, and a lean business structure. In her first 12 months, she's on track to create at least $118,000 in tax savings and business deductions.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Mark</h3>
+<p class="result-value">$118K+</p>
+<p class="result-text">Mark is using short-term rental income, consulting, and strategic tax planning after losing his job. In his first 12 months, he's on track to create at least $118,000 in cash flow and tax savings.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Diane</h3>
+<p class="result-value">$129K+</p>
+<p class="result-text">Diane is using rental properties, an RV park project, and retirement account strategies. In her first 12 months, she's on track to create at least $129,000 in tax savings and passive income.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Scott</h3>
+<p class="result-value">$39K+</p>
+<p class="result-text">Scott is using low-cost cohosting, debt payoff strategies, and simple tax moves. In his first 12 months, he's on track to create at least $39,000 in savings and new income — proving you don't need huge capital to get started.</p>
+</article>
+</div>
+<div class="mt-12 text-center max-w-3xl mx-auto">
+<p class="text-white/90 text-lg leading-relaxed mb-4">Every situation is different. That's why we have strategies for everyone — no matter where you're starting from.</p>
+<p class="text-white/70 leading-relaxed">We stack multiple strategies on top of each other to help you save on taxes, pay off debt faster, invest in the right places, and build the proper entity and wealth structure so your money starts working for you instead of against you.</p>
+</div>
+</div>
+</section>
 <!-- FAQ: Pre-empting Objections -->
 <section id="faq" class="py-24 max-w-4xl mx-auto px-6 scroll-mt-20">
 <h2 class="font-headline text-3xl font-bold text-center mb-16 uppercase tracking-widest">Common Questions</h2>
 <div class="space-y-8">
 <div class="pb-8 border-b border-outline-variant/30">
 <h3 class="font-headline font-bold text-lg mb-3">"Is this legal for W-2 earners?"</h3>
-<p class="text-on-surface-variant leading-relaxed">Every strategy discussed is based on the current IRC (Internal Revenue Code). We don't teach "loopholes" — we teach the intentional design of the tax code that favors active investors and business owners.</p>
+<p class="text-on-surface-variant leading-relaxed">Everything Preston teaches is legal, current, and already written into the tax rules. This is not about gimmicks. It's about understanding how high earners, investors, and business owners use the rules more intentionally.</p>
 </div>
 <div class="pb-8 border-b border-outline-variant/30">
 <h3 class="font-headline font-bold text-lg mb-3">"I already have a CPA. Do I need this?"</h3>
-<p class="text-on-surface-variant leading-relaxed">Most CPAs are compliance-focused — they look at your numbers after the year is over. We're strategy-focused — we plan before December 31st. If your CPA hasn't proactively suggested bonus depreciation or an S-Corp election this year, you have a leak.</p>
+<p class="text-on-surface-variant leading-relaxed">Most CPAs are compliance-focused — they look at your numbers after the year is over. We're strategy-focused — we plan before December 31st. If your CPA has not proactively shown you how to keep more income, reduce taxes on investments, or set up your business more efficiently this year, you likely have a leak.</p>
 </div>
 <div class="pb-8 border-b border-outline-variant/30">
 <h3 class="font-headline font-bold text-lg mb-3">"What income level is this for?"</h3>
@@ -261,41 +707,186 @@
 <section id="register" class="py-24 px-6 bg-[#003527] scroll-mt-20">
 <div class="max-w-2xl mx-auto">
 <div class="text-center mb-12">
-<span class="text-[#e9c349] font-technical font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Free Live Workshop — Today</span>
+<span class="text-[#e9c349] font-technical font-bold text-xs uppercase tracking-[0.3em] mb-4 block">Free Live Workshop — <span data-webinar-register-label="">Daily</span></span>
 <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-white mb-4">Save Your Seat</h2>
-<p class="text-[#80bea6] text-lg">Tonight at <span class="text-white font-bold">7:00 PM EST / 4:00 PM PST</span> — 1 hour that could save you $20,000+ this year.</p>
+<p class="text-[#80bea6] text-lg"><span data-webinar-register-prefix="">Daily at</span> <span class="text-white font-bold" data-webinar-register-time="">7:00 PM ET</span> — 1 hour that could save you $20,000+ this year.</p>
+<div class="countdown-panel countdown-panel--register mx-auto">
+<span class="countdown-panel__label" data-webinar-countdown-label="">Tonight starts in</span>
+<div class="countdown-panel__value-row justify-center">
+<span aria-live="polite" class="countdown-panel__value" data-webinar-countdown-value="">00:00:00</span>
+<span class="countdown-panel__units">hrs min sec</span>
+</div>
+</div>
+<p class="mt-4 max-w-xl text-sm font-medium text-[#f7f3e8]">Join a workshop taught by a creator followed by 7.5M+ people and trusted by 2,000+ success stories.</p>
 </div>
 <div class="bg-white p-8 md:p-12">
 <div class="form_class_c45147dee729311ef5b5c3003946c48f" data-form_id="c45147dee729311ef5b5c3003946c48f">
 <form method="post" action="https://app.kartra.com/process/add_lead/W67F3dVIxv9c" target="_top" class="space-y-6 form_class_W67F3dVIxv9c js_kartra_trackable_object" data-kt-type="optin" data-kt-value="W67F3dVIxv9c" data-kt-owner="8g8M14vk" accept-charset="UTF-8">
 <input type="text" class="" placeholder="" name="aaddress_url" value="" style="display: none; position: absolute; left: -9999px;" aria-hidden="true" tabindex="-1">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div>
-<label class="block text-xs font-technical uppercase tracking-widest text-on-surface-variant mb-2 font-bold" for="first_name">First Name</label>
-<input id="first_name" type="text" class="js_kartra_santitation w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-secondary transition-colors bg-white" data-santitation-type="front_name" placeholder="Preston" name="first_name" value="" required/>
-</div>
-<div>
-<label class="block text-xs font-technical uppercase tracking-widest text-on-surface-variant mb-2 font-bold" for="last_name">Last Name</label>
-<input id="last_name" type="text" class="js_kartra_santitation w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-secondary transition-colors bg-white" data-santitation-type="front_name" placeholder="Seo" name="last_name" value="" required/>
-</div>
+<label class="block text-xs font-technical uppercase tracking-widest text-on-surface-variant mb-2 font-bold" for="first_name">Name</label>
+<input id="first_name" type="text" class="js_kartra_santitation w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-secondary transition-colors bg-white" data-santitation-type="front_name" placeholder="Preston Seo" name="first_name" value="" autocomplete="name" required/>
 </div>
 <div>
 <label class="block text-xs font-technical uppercase tracking-widest text-on-surface-variant mb-2 font-bold" for="email">Email Address</label>
 <input id="email" type="email" class="js_kartra_santitation w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-secondary transition-colors bg-white" data-santitation-type="email" placeholder="you@example.com" name="email" value="" required/>
 </div>
-<div>
-<label class="block text-xs font-technical uppercase tracking-widest text-on-surface-variant mb-2 font-bold" for="household_income">Current Household Income</label>
-<select id="household_income" name="custom_65" class="w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-secondary transition-colors bg-white" required>
-<option value="" disabled selected>Select your range</option>
-<option value="44">$100k-$150k</option>
-<option value="45">$150k-$250k</option>
-<option value="46">$250k-$500k</option>
-<option value="47">500k+</option>
-</select>
-</div>
 <div class="js_captcha_wrapper"></div>
-<button class="submit_button_c45147dee729311ef5b5c3003946c48f w-full bg-secondary-container text-on-secondary-container border-b-4 border-secondary px-10 py-5 rounded-none font-bold text-lg hover:translate-y-[-2px] transition-all uppercase tracking-widest font-technical shadow-lg" onclick="var element = this; element.form.submit(); element.setAttribute('disabled', true); setTimeout(function(){element.removeAttribute('disabled');}, 1000);" type="submit">Register Now - It&#039;s Free</button>
+<button class="submit_button_c45147dee729311ef5b5c3003946c48f cta-signal w-full bg-secondary-container text-on-secondary-container border-b-4 border-secondary px-10 py-5 rounded-none font-bold text-lg hover:translate-y-[-2px] transition-all uppercase tracking-widest font-technical shadow-lg" onclick="var element = this; element.form.submit(); element.setAttribute('disabled', true); setTimeout(function(){element.removeAttribute('disabled');}, 1000);" type="submit">Register Now - It&#039;s Free</button>
 </form>
+<script>
+(() => {
+  const easternTimeZone = "America/New_York";
+  const sessionHour = 19;
+  const sessionMinute = 0;
+
+  const getTimeZoneParts = (date, timeZone) => {
+    const formatter = new Intl.DateTimeFormat("en-US", {
+      timeZone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false
+    });
+
+    const parts = formatter.formatToParts(date).reduce((result, part) => {
+      if (part.type !== "literal") {
+        result[part.type] = Number(part.value);
+      }
+      return result;
+    }, {});
+
+    if (parts.hour === 24) {
+      parts.hour = 0;
+    }
+
+    return parts;
+  };
+
+  const zonedDateTimeToUtc = (year, month, day, hour, minute, second, timeZone) => {
+    let utcGuess = Date.UTC(year, month - 1, day, hour, minute, second);
+
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      const parts = getTimeZoneParts(new Date(utcGuess), timeZone);
+      const targetUtc = Date.UTC(year, month - 1, day, hour, minute, second);
+      const currentUtc = Date.UTC(
+        parts.year,
+        parts.month - 1,
+        parts.day,
+        parts.hour,
+        parts.minute,
+        parts.second
+      );
+
+      const diff = targetUtc - currentUtc;
+      utcGuess += diff;
+
+      if (diff === 0) {
+        break;
+      }
+    }
+
+    return new Date(utcGuess);
+  };
+
+  const addEasternDays = (parts, daysToAdd) => {
+    const noonUtc = zonedDateTimeToUtc(
+      parts.year,
+      parts.month,
+      parts.day,
+      12,
+      0,
+      0,
+      easternTimeZone
+    );
+    noonUtc.setUTCDate(noonUtc.getUTCDate() + daysToAdd);
+    return getTimeZoneParts(noonUtc, easternTimeZone);
+  };
+
+  const getNextSessionDetails = () => {
+    const now = new Date();
+    const easternNow = getTimeZoneParts(now, easternTimeZone);
+    const isAfterCutoff =
+      easternNow.hour > sessionHour ||
+      (easternNow.hour === sessionHour && easternNow.minute >= sessionMinute);
+    const sessionDate = isAfterCutoff ? addEasternDays(easternNow, 1) : easternNow;
+    const sessionInstant = zonedDateTimeToUtc(
+      sessionDate.year,
+      sessionDate.month,
+      sessionDate.day,
+      sessionHour,
+      sessionMinute,
+      0,
+      easternTimeZone
+    );
+
+    return {
+      sessionInstant,
+      label: isAfterCutoff ? "Tomorrow" : "Tonight"
+    };
+  };
+
+  const formatLocalTime = (date) =>
+    new Intl.DateTimeFormat("en-US", {
+      hour: "numeric",
+      minute: "2-digit"
+    }).format(date);
+
+  const webinarElements = {
+    badgeLabels: document.querySelectorAll("[data-webinar-badge-label]"),
+    heroLabels: document.querySelectorAll("[data-webinar-hero-label]"),
+    heroTimes: document.querySelectorAll("[data-webinar-hero-time]"),
+    registerLabels: document.querySelectorAll("[data-webinar-register-label]"),
+    registerPrefixes: document.querySelectorAll("[data-webinar-register-prefix]"),
+    registerTimes: document.querySelectorAll("[data-webinar-register-time]"),
+    countdownLabels: document.querySelectorAll("[data-webinar-countdown-label]"),
+    countdownValues: document.querySelectorAll("[data-webinar-countdown-value]")
+  };
+
+  const setText = (elements, value) => {
+    elements.forEach((element) => {
+      if (element.textContent !== value) {
+        element.textContent = value;
+      }
+    });
+  };
+
+  const formatCountdown = (milliseconds) => {
+    const totalSeconds = Math.max(Math.ceil(milliseconds / 1000), 0);
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    return [hours, minutes, seconds]
+      .map((value) => String(value).padStart(2, "0"))
+      .join(":");
+  };
+
+  const syncWebinarUI = () => {
+    const { sessionInstant, label } = getNextSessionDetails();
+    const localTime = formatLocalTime(sessionInstant);
+    const timeLabel = localTime === "7:00 PM" ? "7:00 PM ET" : `${localTime} your time (7:00 PM ET)`;
+
+    setText(webinarElements.badgeLabels, label);
+    setText(webinarElements.heroLabels, label);
+    setText(webinarElements.heroTimes, timeLabel);
+    setText(webinarElements.registerLabels, label);
+    setText(webinarElements.registerPrefixes, `${label} at`);
+    setText(webinarElements.registerTimes, timeLabel);
+    setText(webinarElements.countdownLabels, `${label} starts in`);
+    setText(
+      webinarElements.countdownValues,
+      formatCountdown(sessionInstant.getTime() - Date.now())
+    );
+  };
+
+  syncWebinarUI();
+  window.setInterval(syncWebinarUI, 1000);
+})();
+</script>
 <script>
 (() => {
   const registerSection = document.getElementById("register");

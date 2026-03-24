@@ -25,6 +25,109 @@ script.src = "https://t.managemoney101.com/v1/lst/universal-script?ph=99701b257a
 head.appendChild(script);
 </script>
 <style>
+  /* Hero two-column layout */
+  .hero-section {
+    padding-top: clamp(2.5rem, 6vw, 4.5rem);
+    padding-bottom: clamp(3rem, 7vw, 5rem);
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-grid__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-grid__image {
+    order: -1;
+    max-width: 360px;
+    width: 100%;
+  }
+
+  .hero-grid__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    order: -1;
+  }
+
+  .hero-grid__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @media (max-width: 859px) {
+    .hero-section {
+      padding-top: 2rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .hero-grid {
+      gap: 1.25rem;
+    }
+
+    .hero-grid__copy {
+      width: 100%;
+      max-width: 42rem;
+    }
+
+    .hero-grid__media {
+      width: 100%;
+      max-width: 26rem;
+      order: 2;
+    }
+
+    .hero-grid__image {
+      display: none;
+    }
+
+    .hero-grid__media .hero-trustproof {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 860px) {
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+      gap: clamp(3rem, 5vw, 5rem);
+      align-items: center;
+      text-align: left;
+    }
+
+    .hero-grid__copy {
+      align-items: flex-start;
+    }
+
+    .hero-grid__image {
+      order: 0;
+      max-width: 100%;
+      justify-self: end;
+    }
+
+    .hero-grid__media {
+      order: 0;
+      align-items: flex-end;
+      justify-self: end;
+    }
+
+    .hero-grid__image img {
+      max-height: 600px;
+      object-position: top center;
+    }
+
+  }
+
   .cta-signal {
     background-color: #ff6b2c;
     border-color: #b74218;
@@ -44,51 +147,20 @@ head.appendChild(script);
   }
 
   .hero-trustproof {
-    margin-top: 1rem;
-    background: #fff;
-    border: 1px solid rgba(197, 198, 205, 0.9);
-    padding: 0.9rem;
-    box-shadow: 0 18px 42px -34px rgba(19, 31, 22, 0.2);
+    margin-top: 0.9rem;
+    width: 100%;
+    max-width: 36rem;
   }
 
   .hero-trustproof img {
     display: block;
     width: 100%;
-    border: 1px solid rgba(197, 198, 205, 0.7);
-    background: #fff;
-  }
-
-  .authority-strip {
-    margin-top: 1.25rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.7rem;
-    flex-wrap: wrap;
-    padding: 0.85rem 1rem;
-    background: #fff;
-    border: 1px solid rgba(197, 198, 205, 0.9);
-    box-shadow: 0 18px 42px -34px rgba(19, 31, 22, 0.2);
-  }
-
-  .authority-strip-stat {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    color: #003527;
-  }
-
-  .authority-strip-copy {
-    color: #44474d;
-    font-size: 0.84rem;
-    line-height: 1.45;
-    max-width: 34rem;
+    height: auto;
   }
 
   .authority-platforms {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
   }
 
@@ -334,111 +406,50 @@ head.appendChild(script);
 </nav>
 <main class="pt-16">
 <!-- Hero Section -->
-<section id="hero" class="relative min-h-[700px] flex items-center px-6 py-20 overflow-hidden bg-[#f9f9f9] border-b border-outline-variant">
+<section id="hero" class="hero-section relative px-6 overflow-hidden bg-[#f9f9f9] border-b border-outline-variant">
 <!-- Grid Background Element -->
 <div class="absolute inset-0 grid-bg opacity-40 pointer-events-none"></div>
-<div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-16 items-center relative z-10 w-full">
-<div class="md:col-span-6">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-outline-variant mb-6">
+<div class="hero-grid max-w-7xl mx-auto relative z-10 w-full">
+<!-- Left Column: Copy -->
+<div class="hero-grid__copy">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-outline-variant mb-6 flex-wrap">
 <span class="w-2 h-2 bg-error rounded-full animate-pulse"></span>
-<span class="text-on-surface font-technical font-bold text-xs uppercase tracking-[0.2em]">Free Live Workshop // <span data-webinar-badge-label="">Daily</span></span>
+<span class="text-on-surface font-technical font-bold text-xs uppercase tracking-[0.2em]">Free Live Workshop</span>
+<span class="text-on-surface-variant font-technical text-xs uppercase tracking-[0.15em]">•</span>
+<span class="text-on-surface font-technical font-bold text-xs uppercase tracking-[0.15em]">1 Hour</span>
+<span class="text-on-surface-variant font-technical text-xs uppercase tracking-[0.15em]">•</span>
+<span class="text-secondary font-technical font-bold text-xs uppercase tracking-[0.15em]"><span data-webinar-badge-label="">Tonight</span> <span data-webinar-hero-time="">7:00 PM ET</span></span>
 </div>
-<h1 class="font-technical text-5xl md:text-7xl font-bold text-primary leading-[0.9] tracking-tighter mb-8 uppercase">
+<h1 class="font-technical text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-[0.95] tracking-tighter mb-6 uppercase">
                         You Made More Money This Year. <br/><span class="text-secondary">You're Keeping Less of It.</span>
                     </h1>
-<p class="text-on-surface-variant text-lg max-w-xl mb-10 leading-relaxed font-body border-l-2 border-outline-variant pl-6">
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed font-body">
                         There are <span class="text-primary font-bold">5 specific leaks</span> in your financial structure costing you thousands every year. In this free workshop, Preston Seo breaks down exactly where your money is going — and how to fix it.
                     </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container px-10 py-5 rounded-none border-b-4 border-secondary font-bold text-lg hover:translate-y-[-2px] transition-all uppercase tracking-widest font-technical shadow-lg text-center">
+<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container px-10 py-5 rounded-none border-b-4 border-secondary font-bold text-lg hover:translate-y-[-2px] transition-all uppercase tracking-widest font-technical shadow-lg text-center inline-block">
                             Save My Seat — It's Free
                         </a>
-</div>
-<div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-<div class="flex items-center gap-2">
-<svg aria-hidden="true" class="icon w-4 h-4 text-on-surface-variant" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5v4.8l3.1 1.9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
-<span class="text-xs font-technical uppercase tracking-wider font-bold">Duration: 1 Hour</span>
-</div>
-<div class="flex items-center gap-2">
-<svg aria-hidden="true" class="icon w-4 h-4 text-secondary" fill="none" viewBox="0 0 24 24"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="16" x="4" y="6"/><path d="M8 4v4M16 4v4M4 10h16" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
-<span class="text-xs font-technical uppercase tracking-wider font-bold text-secondary"><span data-webinar-hero-label="">Daily</span> • <span data-webinar-hero-time="">7:00 PM ET</span></span>
-</div>
-</div>
-<div class="countdown-panel countdown-panel--hero">
+<div class="countdown-panel countdown-panel--hero mt-4">
 <span class="countdown-panel__label" data-webinar-countdown-label="">Tonight starts in</span>
 <div class="countdown-panel__value-row">
 <span aria-live="polite" class="countdown-panel__value" data-webinar-countdown-value="">00:00:00</span>
 <span class="countdown-panel__units">hrs min sec</span>
 </div>
 </div>
-<p class="mt-6 text-on-surface-variant text-sm">This workshop is for W-2 professionals earning $100K+ who followed every rule but still don't feel like they're building real wealth.</p>
 </div>
-<div class="hidden md:block md:col-span-6">
-<!-- Dashboard Visual -->
-<div class="bg-white border border-outline-variant shadow-2xl p-1 relative">
-<div class="bg-surface-container-low border border-outline-variant/50 p-6">
-<div class="flex justify-between items-center mb-8 border-b border-outline-variant pb-4">
-<div class="font-technical font-bold text-sm tracking-widest uppercase">Sample Tax Review</div>
-<div class="flex gap-1">
-<div class="w-2 h-2 bg-error rounded-full"></div>
-<div class="w-2 h-2 bg-secondary-container rounded-full"></div>
-<div class="w-2 h-2 bg-tertiary-fixed-dim rounded-full"></div>
+<!-- Right Column: Preston Image -->
+<div class="hero-grid__media">
+<div class="hero-grid__image">
+<img alt="Preston Seo — Legacy Investing Show host" src="b4d6e42877ebfde78bf69344a6cfce41.avif"/>
 </div>
-</div>
-<div class="space-y-8">
-<!-- Leak Indicator -->
-<div class="relative">
-<div class="flex justify-between items-end mb-2">
-<span class="font-technical text-xs font-bold uppercase tracking-widest text-on-surface-variant">Estimated Taxes Lost Each Year</span>
-<span class="font-technical text-2xl font-bold text-error">-$24,500.00</span>
-</div>
-<div class="h-12 w-full bg-surface-container-high border border-outline-variant overflow-hidden flex items-center px-4 relative">
-<div class="h-full bg-error/10 absolute left-0 top-0 w-3/4 border-r border-error"></div>
-<div class="z-10 flex w-full justify-between items-center">
-<span class="text-[10px] font-technical uppercase font-bold text-error">Biggest issue found in the review</span>
-<svg aria-hidden="true" class="icon w-[18px] h-[18px] text-error" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3.5 2.9 19.2A1.2 1.2 0 0 0 4 21h16a1.2 1.2 0 0 0 1.1-1.8L12 3.5Zm-1 5.5h2v5h-2V9Zm0 6.5h2v2h-2v-2Z"/></svg>
-</div>
-</div>
-</div>
-<!-- Saving Indicator -->
-<div class="relative">
-<div class="flex justify-between items-end mb-2">
-<span class="font-technical text-xs font-bold uppercase tracking-widest text-on-surface-variant">Estimated Money You Could Keep</span>
-<span class="font-technical text-2xl font-bold text-on-tertiary-container">+$18,200.00</span>
-</div>
-<div class="h-12 w-full bg-surface-container-high border border-outline-variant overflow-hidden flex items-center px-4 relative">
-<div class="h-full bg-on-tertiary-container/10 absolute left-0 top-0 w-1/2 border-r border-on-tertiary-container"></div>
-<div class="z-10 flex w-full justify-between items-center">
-<span class="text-[10px] font-technical uppercase font-bold text-on-tertiary-container">One possible fix: add business income</span>
-<svg aria-hidden="true" class="icon w-[18px] h-[18px] text-on-tertiary-container" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12.3 2.4 2.4 4.7-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
-</div>
-</div>
-</div>
-<!-- Technical Stats -->
-<div class="grid grid-cols-2 gap-4 pt-4 border-t border-outline-variant">
-<div class="bg-surface p-3 border border-outline-variant">
-<div class="text-[10px] font-technical uppercase font-bold text-on-surface-variant mb-1">Current Tax Efficiency</div>
-<div class="text-lg font-technical font-bold">42.8%</div>
-</div>
-<div class="bg-surface p-3 border border-outline-variant">
-<div class="text-[10px] font-technical uppercase font-bold text-on-surface-variant mb-1">Audit Risk With This Strategy</div>
-<div class="text-lg font-technical font-bold text-on-tertiary-container">LOW</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="hero-trustproof">
+<div class="hero-trustproof" style="margin-top:0.75rem;">
 <img alt="Trustpilot rating graphic for Legacy Investing Show by Preston Seo" loading="lazy" src="trust/trustpilot.webp"/>
 </div>
-<div class="hero-trustproof">
-<img alt="Workshop proof graphic for Legacy Investing Show by Preston Seo" loading="lazy" src="af204c7a353d959657f10645474ff2c1.avif"/>
-</div>
-<div class="authority-strip" aria-label="Audience authority social proof">
-<span class="authority-strip-stat">7.5M+</span>
-<p class="authority-strip-copy">Followed by 7.5M+ across Instagram, TikTok, Facebook, and YouTube.</p>
 </div>
 </div>
+<!-- Media logos full-width below -->
+<div class="hero-trustproof mx-auto mt-6" style="max-width:44rem;">
+<img alt="As seen in Financial Times, Yahoo, Business Insider, The Sun" loading="lazy" src="af204c7a353d959657f10645474ff2c1.avif"/>
 </div>
 </section>
 <!-- The 5 Silent Leaks -->
@@ -487,67 +498,45 @@ head.appendChild(script);
 </div>
 </div>
 </section>
-<!-- Qualification Section -->
-<section class="bg-[#f3f1eb] py-24 px-6 border-b border-outline-variant/40">
-<div class="max-w-5xl mx-auto">
-<!-- Two separate cards side by side -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-<!-- FOR YOU card -->
-<div class="bg-white border border-outline-variant p-10 md:p-12 shadow-[0_10px_40px_-20px_rgba(19,31,22,0.15)]">
-<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[#e8f5e9] border border-[#a5d6a7] mb-6">
-<svg class="w-4 h-4 text-[#2e7d32]" fill="none" viewBox="0 0 24 24"><path d="m8.5 12.3 2.4 2.4 4.7-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></svg>
-<span class="text-[#2e7d32] font-technical font-bold text-xs uppercase tracking-widest">For you</span>
+<!-- Proof / Trust -->
+<section class="proof-section">
+<div class="proof-shell">
+<h2 class="proof-title">Results</h2>
+<div class="results-grid">
+<article class="result-card">
+<h3 class="result-name">Paul</h3>
+<p class="result-value">$299K+</p>
+<p class="result-text">Paul is using 401(k) rollovers, self-directed retirement accounts, and Bitcoin income strategies. In his first 12 months, he's on track to create at least $299,000 in tax savings and investment returns.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Wei + Mei</h3>
+<p class="result-value">$268K+</p>
+<p class="result-text">Wei and Mei are using passive investing, retirement accounts, and visa-friendly business strategies. In their first 12 months, they're on track to create at least $268,000 in tax savings and investment growth.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Andreea</h3>
+<p class="result-value">$118K+</p>
+<p class="result-text">Andreea is using year-end tax planning, cost segregation, and a lean business structure. In her first 12 months, she's on track to create at least $118,000 in tax savings and business deductions.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Diane</h3>
+<p class="result-value">$129K+</p>
+<p class="result-text">Diane is using rental properties, an RV park project, and retirement account strategies. In her first 12 months, she's on track to create at least $129,000 in tax savings and passive income.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Mark</h3>
+<p class="result-value">$118K+</p>
+<p class="result-text">Mark is using short-term rental income, consulting, and strategic tax planning after losing his job. In his first 12 months, he's on track to create at least $118,000 in cash flow and tax savings.</p>
+</article>
+<article class="result-card">
+<h3 class="result-name">Scott</h3>
+<p class="result-value">$39K+</p>
+<p class="result-text">Scott is using low-cost cohosting, debt payoff strategies, and simple tax moves. In his first 12 months, he's on track to create at least $39,000 in savings and new income — proving you don't need huge capital to get started.</p>
+</article>
 </div>
-<h3 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-8 leading-tight">This workshop is for you if...</h3>
-<ul class="space-y-6">
-<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
-<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">01</span>
-<span class="text-on-surface leading-relaxed">You earn <strong>$100K+ in W-2 income</strong> and every raise feels smaller than it should.</span>
-</li>
-<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
-<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">02</span>
-<span class="text-on-surface leading-relaxed">You did everything right — degree, career, promotions — and still don't feel like you're <strong>building real wealth.</strong></span>
-</li>
-<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
-<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">03</span>
-<span class="text-on-surface leading-relaxed">You want a <strong>specific, practical strategy</strong> — not vague motivation or another podcast episode.</span>
-</li>
-<li class="flex items-start gap-4">
-<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">04</span>
-<span class="text-on-surface leading-relaxed">You're open to using business ownership or real estate to <strong>restructure how your income is taxed.</strong></span>
-</li>
-</ul>
-</div>
-<!-- NOT FOR YOU card -->
-<div class="bg-[#003527] border border-[#064e3b] p-10 md:p-12 shadow-[0_10px_40px_-20px_rgba(0,53,39,0.4)]">
-<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/15 mb-6">
-<svg class="w-4 h-4 text-[#e9c349]" fill="none" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></svg>
-<span class="text-[#e9c349] font-technical font-bold text-xs uppercase tracking-widest">Not for you</span>
-</div>
-<h3 class="text-2xl md:text-3xl font-headline font-bold text-white mb-8 leading-tight">This is NOT for you if...</h3>
-<ul class="space-y-6">
-<li class="flex items-start gap-4 pb-6 border-b border-white/10">
-<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">01</span>
-<span class="leading-relaxed" style="color: #f7f3e8;">You want a <strong style="color: #ffffff;">get-rich-quick shortcut</strong> or a tax loophole with zero effort.</span>
-</li>
-<li class="flex items-start gap-4 pb-6 border-b border-white/10">
-<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">02</span>
-<span class="leading-relaxed" style="color: #f7f3e8;">You're not willing to <strong style="color: #ffffff;">implement strategies</strong> — you just want to complain about taxes.</span>
-</li>
-<li class="flex items-start gap-4 pb-6 border-b border-white/10">
-<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">03</span>
-<span class="leading-relaxed" style="color: #f7f3e8;">You're looking for a <strong style="color: #ffffff;">done-for-you service</strong> where you don't have to understand your own finances.</span>
-</li>
-<li class="flex items-start gap-4">
-<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">04</span>
-<span class="leading-relaxed" style="color: #f7f3e8;">You already work with a <strong style="color: #ffffff;">proactive tax strategist</strong> and know exactly where every dollar goes.</span>
-</li>
-</ul>
-</div>
-</div>
-<!-- Bottom CTA bar - full width, separate card -->
-<div class="bg-white border border-outline-variant p-8 md:px-12 md:py-8 shadow-[0_10px_40px_-20px_rgba(19,31,22,0.15)] flex justify-center items-center">
-<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container px-16 py-5 rounded-none border-b-4 border-secondary font-bold text-sm uppercase tracking-widest w-full md:w-auto text-center shrink-0 hover:translate-y-[-2px] transition-all shadow-lg font-technical">Save My Seat — Free</a>
+<div class="mt-12 text-center max-w-3xl mx-auto">
+<p class="text-on-surface text-lg leading-relaxed mb-4">Every situation is different. That's why we have strategies for everyone — no matter where you're starting from.</p>
+<p class="text-on-surface-variant leading-relaxed">We stack multiple strategies on top of each other to help you save on taxes, pay off debt faster, invest in the right places, and build the proper entity and wealth structure so your money starts working for you instead of against you.</p>
 </div>
 </div>
 </section>
@@ -638,45 +627,67 @@ head.appendChild(script);
 </div>
 </div>
 </section>
-<!-- Proof / Trust -->
-<section class="proof-section">
-<div class="proof-shell">
-<h2 class="proof-title">Results</h2>
-<div class="results-grid">
-<article class="result-card">
-<h3 class="result-name">Paul</h3>
-<p class="result-value">$299K+</p>
-<p class="result-text">Paul is using 401(k) rollovers, self-directed retirement accounts, and Bitcoin income strategies. In his first 12 months, he's on track to create at least $299,000 in tax savings and investment returns.</p>
-</article>
-<article class="result-card">
-<h3 class="result-name">Wei + Mei</h3>
-<p class="result-value">$268K+</p>
-<p class="result-text">Wei and Mei are using passive investing, retirement accounts, and visa-friendly business strategies. In their first 12 months, they're on track to create at least $268,000 in tax savings and investment growth.</p>
-</article>
-<article class="result-card">
-<h3 class="result-name">Andreea</h3>
-<p class="result-value">$118K+</p>
-<p class="result-text">Andreea is using year-end tax planning, cost segregation, and a lean business structure. In her first 12 months, she's on track to create at least $118,000 in tax savings and business deductions.</p>
-</article>
-<article class="result-card">
-<h3 class="result-name">Mark</h3>
-<p class="result-value">$118K+</p>
-<p class="result-text">Mark is using short-term rental income, consulting, and strategic tax planning after losing his job. In his first 12 months, he's on track to create at least $118,000 in cash flow and tax savings.</p>
-</article>
-<article class="result-card">
-<h3 class="result-name">Diane</h3>
-<p class="result-value">$129K+</p>
-<p class="result-text">Diane is using rental properties, an RV park project, and retirement account strategies. In her first 12 months, she's on track to create at least $129,000 in tax savings and passive income.</p>
-</article>
-<article class="result-card">
-<h3 class="result-name">Scott</h3>
-<p class="result-value">$39K+</p>
-<p class="result-text">Scott is using low-cost cohosting, debt payoff strategies, and simple tax moves. In his first 12 months, he's on track to create at least $39,000 in savings and new income — proving you don't need huge capital to get started.</p>
-</article>
+<!-- Qualification Section -->
+<section class="bg-[#f3f1eb] py-24 px-6 border-b border-outline-variant/40">
+<div class="max-w-5xl mx-auto">
+<!-- Two separate cards side by side -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<!-- FOR YOU card -->
+<div class="bg-white border border-outline-variant p-10 md:p-12 shadow-[0_10px_40px_-20px_rgba(19,31,22,0.15)]">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[#e8f5e9] border border-[#a5d6a7] mb-6">
+<svg class="w-4 h-4 text-[#2e7d32]" fill="none" viewBox="0 0 24 24"><path d="m8.5 12.3 2.4 2.4 4.7-5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></svg>
+<span class="text-[#2e7d32] font-technical font-bold text-xs uppercase tracking-widest">For you</span>
 </div>
-<div class="mt-12 text-center max-w-3xl mx-auto">
-<p class="text-on-surface text-lg leading-relaxed mb-4">Every situation is different. That's why we have strategies for everyone — no matter where you're starting from.</p>
-<p class="text-on-surface-variant leading-relaxed">We stack multiple strategies on top of each other to help you save on taxes, pay off debt faster, invest in the right places, and build the proper entity and wealth structure so your money starts working for you instead of against you.</p>
+<h3 class="text-2xl md:text-3xl font-headline font-bold text-primary mb-8 leading-tight">This workshop is for you if...</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
+<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">01</span>
+<span class="text-on-surface leading-relaxed">You earn <strong>$100K+ in W-2 income</strong> and every raise feels smaller than it should.</span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
+<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">02</span>
+<span class="text-on-surface leading-relaxed">You did everything right — degree, career, promotions — and still don't feel like you're <strong>building real wealth.</strong></span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-outline-variant/50">
+<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">03</span>
+<span class="text-on-surface leading-relaxed">You want a <strong>specific, practical strategy</strong> — not vague motivation or another podcast episode.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="mt-1 text-[#2e7d32] font-bold font-technical text-sm shrink-0 w-5">04</span>
+<span class="text-on-surface leading-relaxed">You're open to using business ownership or real estate to <strong>restructure how your income is taxed.</strong></span>
+</li>
+</ul>
+</div>
+<!-- NOT FOR YOU card -->
+<div class="bg-[#003527] border border-[#064e3b] p-10 md:p-12 shadow-[0_10px_40px_-20px_rgba(0,53,39,0.4)]">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/15 mb-6">
+<svg class="w-4 h-4 text-[#e9c349]" fill="none" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></svg>
+<span class="text-[#e9c349] font-technical font-bold text-xs uppercase tracking-widest">Not for you</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-headline font-bold text-white mb-8 leading-tight">This is NOT for you if...</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-4 pb-6 border-b border-white/10">
+<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">01</span>
+<span class="leading-relaxed" style="color: #f7f3e8;">You want a <strong style="color: #ffffff;">get-rich-quick shortcut</strong> or a tax loophole with zero effort.</span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-white/10">
+<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">02</span>
+<span class="leading-relaxed" style="color: #f7f3e8;">You're not willing to <strong style="color: #ffffff;">implement strategies</strong> — you just want to complain about taxes.</span>
+</li>
+<li class="flex items-start gap-4 pb-6 border-b border-white/10">
+<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">03</span>
+<span class="leading-relaxed" style="color: #f7f3e8;">You're looking for a <strong style="color: #ffffff;">done-for-you service</strong> where you don't have to understand your own finances.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="mt-1 text-[#e9c349] font-bold font-technical text-sm shrink-0 w-5">04</span>
+<span class="leading-relaxed" style="color: #f7f3e8;">You already work with a <strong style="color: #ffffff;">proactive tax strategist</strong> and know exactly where every dollar goes.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom CTA bar - full width, separate card -->
+<div class="flex justify-center items-center">
+<a href="#register" class="cta-signal bg-secondary-container text-on-secondary-container px-16 py-5 rounded-none border-b-4 border-secondary font-bold text-sm uppercase tracking-widest w-full md:w-auto text-center shrink-0 hover:translate-y-[-2px] transition-all shadow-lg font-technical">Save My Seat — Free</a>
 </div>
 </div>
 </section>
@@ -691,18 +702,6 @@ head.appendChild(script);
 <div class="pb-8 border-b border-outline-variant/30">
 <h3 class="font-headline font-bold text-lg mb-3">"I already have a CPA. Do I need this?"</h3>
 <p class="text-on-surface-variant leading-relaxed">Most CPAs are compliance-focused — they look at your numbers after the year is over. We're strategy-focused — we plan before December 31st. If your CPA has not proactively shown you how to keep more income, reduce taxes on investments, or set up your business more efficiently this year, you likely have a leak.</p>
-</div>
-<div class="pb-8 border-b border-outline-variant/30">
-<h3 class="font-headline font-bold text-lg mb-3">"What income level is this for?"</h3>
-<p class="text-on-surface-variant leading-relaxed">This workshop is designed for W-2 professionals and households earning $100K+. The strategies become especially powerful above $150K where structural inefficiencies compound fastest.</p>
-</div>
-<div class="pb-8 border-b border-outline-variant/30">
-<h3 class="font-headline font-bold text-lg mb-3">"How long is it and is there a replay?"</h3>
-<p class="text-on-surface-variant leading-relaxed">The live workshop is 1 hour. Attend live for the full experience — Preston takes questions in real-time. A replay will be available for a limited time to registered attendees only.</p>
-</div>
-<div class="pb-8 border-b border-outline-variant/30">
-<h3 class="font-headline font-bold text-lg mb-3">"Is this a sales pitch?"</h3>
-<p class="text-on-surface-variant leading-relaxed">Preston teaches the full framework with real math and real numbers for 45+ minutes. Nothing is held back. At the end, he'll share how to get hands-on help implementing — but the workshop alone gives you everything you need to identify your leaks.</p>
 </div>
 </div>
 </section>
@@ -728,7 +727,7 @@ head.appendChild(script);
 <input type="text" class="" placeholder="" name="aaddress_url" value="" style="display: none; position: absolute; left: -9999px;" aria-hidden="true" tabindex="-1">
 <div>
 <label class="block text-xs font-technical uppercase tracking-widest text-on-surface-variant mb-2 font-bold" for="first_name">Name</label>
-<input id="first_name" type="text" class="js_kartra_santitation w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-secondary transition-colors bg-white" data-santitation-type="front_name" placeholder="Preston Seo" name="first_name" value="" autocomplete="name" required/>
+<input id="first_name" type="text" class="js_kartra_santitation w-full border border-outline-variant px-4 py-3 text-sm focus:outline-none focus:border-secondary transition-colors bg-white" data-santitation-type="front_name" placeholder="John Doe" name="first_name" value="" autocomplete="name" required/>
 </div>
 <div>
 <label class="block text-xs font-technical uppercase tracking-widest text-on-surface-variant mb-2 font-bold" for="email">Email Address</label>
@@ -951,18 +950,4 @@ head.appendChild(script);
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-[#003527] w-full py-12 border-t border-white/10">
-<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 font-inter text-sm leading-relaxed">
-<div class="flex flex-col gap-4">
-<div class="text-lg font-bold text-white font-headline uppercase tracking-tighter">Preston Seo | LEGACY INVESTING SHOW</div>
-<p class="text-on-surface-variant max-w-sm">© 2026 Preston Seo | LEGACY INVESTING SHOW. All Rights Reserved. Private Wealth Management for W-2 Professionals.</p>
-</div>
-<div class="flex gap-8">
-<a class="text-on-surface-variant hover:text-secondary transition-colors uppercase text-xs font-bold tracking-widest" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors uppercase text-xs font-bold tracking-widest" href="#">Terms</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors uppercase text-xs font-bold tracking-widest" href="#">Disclosures</a>
-</div>
-</div>
-</footer>
 </body></html>

@@ -402,7 +402,7 @@ head.appendChild(script);
 <span class="text-on-surface-variant font-technical text-xs uppercase tracking-[0.15em]">•</span>
 <span class="text-on-surface font-technical font-bold text-xs uppercase tracking-[0.15em]">1 Hour</span>
 <span class="text-on-surface-variant font-technical text-xs uppercase tracking-[0.15em]">•</span>
-<span class="text-secondary font-technical font-bold text-xs uppercase tracking-[0.15em]"><span data-webinar-badge-label="">Tonight</span> <span data-webinar-hero-time="">7:00 PM ET</span></span>
+<span class="text-secondary font-technical font-bold text-xs uppercase tracking-[0.15em]"><span data-webinar-badge-label="">Tonight</span> <span data-webinar-hero-time="">5:00 PM ET</span></span>
 </div>
 <h1 class="font-technical text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-[0.95] tracking-tighter mb-6 uppercase">
                         You Made More Money This Year. <br/><span class="text-secondary">You're Keeping Less of It.</span>
@@ -721,7 +721,7 @@ head.appendChild(script);
 <script>
 (() => {
   const easternTimeZone = "America/New_York";
-  const sessionHour = 19;
+  const sessionHour = 17;
   const sessionMinute = 0;
 
   const getTimeZoneParts = (date, timeZone) => {
@@ -852,7 +852,7 @@ head.appendChild(script);
   const syncWebinarUI = () => {
     const { sessionInstant, label } = getNextSessionDetails();
     const localTime = formatLocalTime(sessionInstant);
-    const timeLabel = localTime === "7:00 PM" ? "7:00 PM ET" : `${localTime} your time (7:00 PM ET)`;
+    const timeLabel = localTime === "5:00 PM" ? "5:00 PM ET" : `${localTime} your time (5:00 PM ET)`;
 
     setText(webinarElements.badgeLabels, label);
     setText(webinarElements.heroLabels, label);
